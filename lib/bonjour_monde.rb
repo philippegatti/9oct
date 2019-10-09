@@ -49,7 +49,7 @@ end
 
 def follow_hashtag (condition, number, client)
 	followed_users=0
-	a=1
+	a=number
 	list=[]
 	until followed_users == number
 		client.search(condition).take(a).each do |tweet|
